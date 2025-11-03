@@ -1,0 +1,11 @@
+---
+- name: Deploy simple-website to local k3d/K3s
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Ensure cluster is up
+      ansible.builtin.command: k3d cluster create --config infra/k3d-cluster.yaml
+      ignore_errors: true
+
+    - name: Apply Kustomize
+      ansible.builtin.command: kubectl apply -k k8s

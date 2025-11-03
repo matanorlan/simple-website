@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ name }}</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; margin: 2rem; }
+    .card { max-width: 680px; padding: 1.5rem; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+    h1 { margin-top: 0; }
+    code { background: #f6f8fa; padding: 0.2rem 0.4rem; border-radius: 6px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>{{ name }}</h1>
+    <p>Minimal Flask site to showcase CI/CD, IaC, and DevOps craftsmanship.</p>
+    <div class="grid">
+      <div>
+        <strong>Health:</strong> <code>/health</code>
+      </div>
+      <div>
+        <strong>Version:</strong> <code>/version</code>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
