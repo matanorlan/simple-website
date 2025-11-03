@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/matanorlan/simple-website:0.1.0
+          image: ghcr.io/OWNER/simple-website:0.1.0
           imagePullPolicy: IfNotPresent
           env:
             - name: SITE_NAME

@@ -1,5 +1,5 @@
 APP?=simple-website
-IMAGE?=ghcr.io/matanorlan/$(APP)
+IMAGE?=ghcr.io/OWNER/$(APP)
 TAG?=$(shell cat VERSION 2>/dev/null || echo dev)
 KUBECONFIG?=$(HOME)/.kube/config
 COMPOSE ?= docker compose
